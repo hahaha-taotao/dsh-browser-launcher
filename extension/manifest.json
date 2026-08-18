@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Harness",
+  "version": "1.0.6",
+  "description": "在 Tabbit 中启动、停止并打开本地 DeepSeek Harness",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyygg+y7Gjxx1rbzVz6p+yX1BUKCuFmtnEY1ePXnIfHuuTkwmWxnETRk/E36+nzY8CD683Wh227XBhI9FVQZAelXyyk3pqpcJNy4aPozMxUy8P2zKyXkBs3z3j0DHZcZsT3snBwvyv4+6yixRJr1fdGCKRIKIFnZ0BAHfTiPnkA+skTpWY8jcYkV4jtTeEYdoQ5WTGONvV6j52jIKro2/JJYjc9/MXiLNjj4zDd8NfdFsfsTW8kcmyhYVbzC+a5ZSVpk7hOEZ+0qcYXSNavD0sLa2d5SZDiQrpJ95Wf8vvo3N0uYNG8+Hpw0Xlxz3wLvzpQIb9yqiV9frz9Nj6m9FuQIDAQAB",
+  "action": {
+    "default_title": "DeepSeek Harness",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["nativeMessaging", "storage", "tabs"],
+  "host_permissions": ["http://127.0.0.1:3080/*"],
+  "minimum_chrome_version": "109"
+}

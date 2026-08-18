@@ -1,0 +1,18 @@
+DeepSeek Harness 浏览器启动器 — 安装说明
+
+需要：
+1. Windows
+2. 已安装 Node.js，并且能在命令行里运行 node / npx
+3. Tabbit（或其它 Chromium 内核浏览器）
+
+安装步骤：
+1. 解压整个文件夹，不要只拷 extension
+2. 双击「安装.bat」（若被拦截，选仍要运行）
+3. 打开 Tabbit 扩展页 chrome://extensions
+4. 打开右上角「开发者模式」
+5. 「加载已解压的扩展程序」，选这个文件夹里的 extension
+6. 若浏览器已经开着，关掉再开一次
+7. 把 DeepSeek Harness 钉到工具栏
+
+本机还要能启动 DSH：npx --yes @deepseek-ai/dsh web
+第一次会下载官方包，之后点扩展里的「启动服务」即可。

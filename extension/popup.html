@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DeepSeek Harness</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="icons/icon48.png" alt="" />
+      <div>
+        <h1>DeepSeek Harness</h1>
+        <p>本地服务控制</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="status-row">
+        <span id="dot" class="dot"></span>
+        <span id="statusText">检查中…</span>
+      </div>
+      <div id="url" class="url">http://127.0.0.1:3080</div>
+    </section>
+
+    <button id="btnStart" class="btn primary" type="button">启动服务</button>
+
+    <div class="row">
+      <button id="btnStop" class="btn danger" type="button">停止</button>
+      <button id="btnRestart" class="btn ghost" type="button">重启</button>
+      <button id="btnOpen" class="btn ghost" type="button">打开</button>
+    </div>
+
+    <label class="switch">
+      <input id="autoOpen" type="checkbox" checked />
+      <span class="track"></span>
+      <span>启动后打开界面</span>
+    </label>
+
+    <p id="hint" class="hint" hidden></p>
+    <script src="popup.js"></script>
+  </body>
+</html>

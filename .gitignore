@@ -1,0 +1,7 @@
+dist/
+host/extension.pem
+host/native-host.cmd
+host/com.dsh.launcher.json
+*.log
+.DS_Store
+Thumbs.db
